@@ -946,8 +946,28 @@ section { padding: 6rem 0; }
   pointer-events: none;
 }
 .map-embed-pill svg { color: var(--sage); flex-shrink: 0; }
+/* Mobile map — swap iframe for a clean directions card */
+.map-desktop { display: block; }
+.map-mobile-card {
+  display: none;
+  background: var(--ivory);
+  border: 1px solid var(--sand);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.map-mobile-card__pin {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--sage); margin: 0 auto 1.2rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.map-mobile-card__pin svg { stroke: #fff; }
+.map-mobile-card h3 { font-size: 1.4rem; margin-bottom: 0.4rem; }
+.map-mobile-card p { font-size: 0.95rem; margin-bottom: 1.75rem; }
 @media (max-width: 768px) {
-  .map-embed-wrap iframe { height: 300px; }
+  .map-desktop { display: none; }
+  .map-mobile-card { display: block; }
 }
 
 /* Garden Centre grid */
