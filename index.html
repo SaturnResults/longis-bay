@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Longis Bay Garden Services · Alderney</title>
+  <meta name="description" content="Professional gardening services in Alderney. Established 1996. Lawn maintenance, landscaping, tree surgery, fencing, patios and plant sales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">Longis Bay<span class="nav__logo-sub">Garden Services</span></span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav__cta">Get in Touch</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav__mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="nav__mobile" id="mobileNav">
+  <div class="nav__mobile-header">
+    <span class="nav__logo-text" style="color:#fff;">Longis Bay<span class="nav__logo-sub" style="color:rgba(255,255,255,0.6);">Garden Services</span></span>
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="nav__mobile-body">
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="services.html" class="nav__mobile-link">Services</a>
+    <a href="gallery.html" class="nav__mobile-link">Gallery</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+  <div class="nav__mobile-footer">
+    <a href="tel:07781116790" class="nav__mobile-wa-full">
+      Call 07781 116790
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    </a>
+    <a href="mailto:info@longisbay.com" class="btn btn-primary">Email Us</a>
+  </div>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero-slider" id="heroSlider">
+  <div class="hero-slider__card">
+
+    <div class="hero-slide active">
+      <div class="hero-slide__img hero-slide__img--1"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <h1>Alderney's Trusted<br/>Garden Specialists</h1>
+        <p class="hero-slide__sub">Professional gardening services with over 25 years of experience. We take care of your outdoor space — from regular maintenance to full landscaping.</p>
+        <a href="services.html" class="btn btn-slide">Our services &rsaquo;</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="hero-slide__img hero-slide__img--2"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <h1>Tree Surgery &amp;<br/>Expert Tree Care</h1>
+        <p class="hero-slide__sub">From fruit tree pruning to full tree felling — carried out safely and professionally by experienced specialists across Alderney.</p>
+        <a href="services.html" class="btn btn-slide">Find out more &rsaquo;</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="hero-slide__img hero-slide__img--3"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <h1>Landscaping &amp;<br/>Garden Design</h1>
+        <p class="hero-slide__sub">Complete garden transformations — new lawns, flower beds, planting schemes, fencing and patios. Built to last and made to impress.</p>
+        <a href="contact.html" class="btn btn-slide">Get a quote &rsaquo;</a>
+      </div>
+    </div>
+
+    <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+
+    <div class="hero-slider__dots">
+      <button class="hero-slider__dot active" aria-label="Slide 1"></button>
+      <button class="hero-slider__dot" aria-label="Slide 2"></button>
+      <button class="hero-slider__dot" aria-label="Slide 3"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar__track">
+    <div class="trust-bar__inner">
+      <div class="trust-item"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Established 1996</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Serving All of Alderney</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>25+ Years Experience</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>Call 07781 116790</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Own Greenhouse &amp; Plant Shop</div>
+      <!-- Duplicate for mobile scroll -->
+      <div class="trust-divider trust-loop-only"></div>
+      <div class="trust-item trust-loop-only"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Established 1996</div>
+      <div class="trust-divider trust-loop-only"></div>
+      <div class="trust-item trust-loop-only"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Serving All of Alderney</div>
+      <div class="trust-divider trust-loop-only"></div>
+      <div class="trust-item trust-loop-only"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>25+ Years Experience</div>
+      <div class="trust-divider trust-loop-only"></div>
+      <div class="trust-item trust-loop-only"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Own Greenhouse &amp; Plant Shop</div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO / ABOUT -->
+<section class="bg-white">
+  <div class="container">
+    <div class="intro-split">
+      <div class="intro-split__visual">
+        <div class="intro-split__box">
+          <img src="images/main.avif" alt="Longis Bay Garden Services" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+        </div>
+        <div class="intro-split__badge">
+          <div class="intro-split__badge-num">1996</div>
+          <div class="intro-split__badge-label">Est. in Alderney</div>
+        </div>
+      </div>
+      <div class="intro-split__text fade-up">
+        <p class="eyebrow">Why Longis Bay</p>
+        <div class="divider"></div>
+        <h2>More than a tidy garden. A service built around you.</h2>
+        <p>We don't believe in one-size-fits-all. At Longis Bay, every job begins with understanding what you need — your garden, your vision, your timescale. Then we get to work.</p>
+        <p>Our experienced team combines decades of island knowledge with genuine craftsmanship, from a single lawn cut to a full garden transformation. Whether you're a homeowner, a business, or need regular seasonal care — we're here for you.</p>
+        <div class="intro-split__stats">
+          <div class="stat-box">
+            <div class="stat-box__num">25+</div>
+            <div class="stat-box__label">Years on Alderney</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box__num">10+</div>
+            <div class="stat-box__label">Services offered</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box__num">★ 5</div>
+            <div class="stat-box__label">Trusted reputation</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box__num">🌿</div>
+            <div class="stat-box__label">Own greenhouse &amp; plants</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;">
+          <a href="services.html" class="btn btn-primary">View Our Services</a>
+          <a href="gallery.html" class="btn btn-outline">See Our Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="bg-ivory">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <p class="eyebrow">What We Do</p>
+      <div class="divider divider--center"></div>
+      <h2>Every garden service under one roof</h2>
+      <p>From a single lawn cut to a full garden transformation — we handle everything with care, skill and 25 years of experience behind every visit.</p>
+    </div>
+    <div class="treatments-grid">
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-lawn">
+          <img src="images/lawn.avif" alt="Lawn maintenance" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Most Requested</p>
+          <h3>Lawn Maintenance</h3>
+          <p>Regular mowing, edging and seasonal care to keep your lawn looking immaculate year-round. Domestic and commercial.</p>
+          <a href="services.html#lawn" class="treatment-card__link">
+            Learn more
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-tree">
+          <img src="images/tree-surgery.avif" alt="Tree surgery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Specialists</p>
+          <h3>Tree Surgery</h3>
+          <p>Fruit tree pruning to full tree felling — carried out safely by experienced tree specialists across the island.</p>
+          <a href="services.html#tree-surgery" class="treatment-card__link">
+            Learn more
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-landscape">
+          <img src="images/landscape.avif" alt="Landscaping" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Full Transformations</p>
+          <h3>Landscaping</h3>
+          <p>Complete garden redesigns including new lawns, flower beds, planting schemes and garden design tailored to you.</p>
+          <a href="services.html#landscaping" class="treatment-card__link">
+            Learn more
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-hedge">
+          <img src="images/hedge.avif" alt="Hedge cutting" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Precision Work</p>
+          <h3>Hedge Cutting</h3>
+          <p>Neat, well-maintained hedges that define your property. All hedge types, all sizes — trimmed to perfection.</p>
+          <a href="services.html#hedge-cutting" class="treatment-card__link">
+            Learn more
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-fencing">
+          <img src="images/fencing.avif" alt="Fencing and patios" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Hard Landscaping</p>
+          <h3>Fencing &amp; Patios</h3>
+          <p>Quality fencing installation and patio construction — built to last in Alderney's coastal conditions.</p>
+          <a href="services.html#fencing" class="treatment-card__link">
+            Learn more
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="treatment-card fade-up">
+        <div class="treatment-card__visual vis-plants">
+          <img src="images/shop.avif" alt="Plant sales" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="treatment-card__body">
+          <p class="treatment-card__tag">Own Greenhouse</p>
+          <h3>Plant Sales</h3>
+          <p>Bedding plants, herbs, perennials, fruit trees, hedging and cordyline palms — grown in our own greenhouse.</p>
+          <a href="services.html#plant-sales" class="treatment-card__link">
+            Enquire now
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="services.html" class="btn btn-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <p class="eyebrow">Client Reviews</p>
+      <div class="divider divider--center" style="background:var(--sage)"></div>
+      <h2>What our customers say</h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__quote">"Longis Bay have been looking after our garden for years. Reliable, skilled and genuinely passionate about their work — we wouldn't use anyone else on the island."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">S</div>
+          <div>
+            <div class="testimonial-card__name">Sarah M.</div>
+            <div class="testimonial-card__via">Alderney Resident</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__quote">"Had them do a full garden clearance and plant new beds. The transformation was incredible. Professional from start to finish and the prices are very fair."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">J</div>
+          <div>
+            <div class="testimonial-card__name">James T.</div>
+            <div class="testimonial-card__via">Alderney Resident</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__quote">"The plants from their greenhouse are exceptional quality. Much better than anything you can get shipped over. Always my first call for anything garden-related."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">R</div>
+          <div>
+            <div class="testimonial-card__name">Rachel H.</div>
+            <div class="testimonial-card__via">Alderney Resident</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY STRIP -->
+<section class="bg-white" style="padding:0 0 5rem;">
+  <div class="container">
+    <div class="section-header section-header--center fade-up" style="padding-top:5rem;">
+      <p class="eyebrow">Our Work</p>
+      <div class="divider divider--center"></div>
+      <h2>Gardens we've transformed</h2>
+    </div>
+    <div class="gallery-strip-grid fade-up">
+      <div class="gallery-strip-item">
+        <img src="images/flowerbed.avif" alt="Flower bed"/>
+      </div>
+      <div class="gallery-strip-item">
+        <img src="images/weeding.avif" alt="Garden maintenance"/>
+      </div>
+      <div class="gallery-strip-item">
+        <img src="images/plants.avif" alt="Plants"/>
+      </div>
+      <div class="gallery-strip-item">
+        <img src="images/planting.avif" alt="Planting"/>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <p class="eyebrow" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">Ready to get started?</p>
+    <h2>Book your garden service today</h2>
+    <p>Join Alderney homeowners and businesses who trust Longis Bay to keep their outdoor spaces looking their best. Call us or send an email — we respond quickly.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:07781116790" class="btn btn-white">Call 07781 116790</a>
+      <a href="contact.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">Send a Message</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="nav__logo-text" style="font-size:1.1rem;">Longis Bay<span class="nav__logo-sub">Garden Services</span></span>
+        </a>
+        <p>Professional gardening services across Alderney since 1996. Lawn maintenance, landscaping, tree surgery, fencing, patios and plant sales.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Lawn Maintenance</a></li>
+          <li><a href="services.html">Tree Surgery</a></li>
+          <li><a href="services.html">Landscaping</a></li>
+          <li><a href="services.html">Hedge Cutting</a></li>
+          <li><a href="services.html">Fencing &amp; Patios</a></li>
+          <li><a href="services.html">Plant Sales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:07781116790">07781 116790</a></li>
+          <li><a href="mailto:info@longisbay.com">info@longisbay.com</a></li>
+          <li><a href="#">Alderney</a></li>
+          <li><a href="#">Channel Islands</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Longis Bay Garden Services · Alderney · Est. 1996</span>
+    </div>
+  </div>
+  <div class="footer-built">Built by <a href="https://saturnresults.co.uk" target="_blank" rel="noopener">Saturn Results</a></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
