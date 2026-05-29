@@ -8,14 +8,16 @@
   --white:      #ffffff;
   --sand:       #d9e4d3;
   --stone:      #a8c09e;
-  --sage:       #11dbff;
-  --sage-dark:  #0099bb;
-  --sage-light: #e0fbff;
+  --sage:       #5a8a4a;
+  --sage-dark:  #2d5a20;
+  --sage-light: #eaf2e6;
   --charcoal:   #0e1a0a;
   --mid:        #3a5430;
   --light:      #6b8f60;
   --accent:     #7aaa66;
   --accent-lt:  #eaf2e6;
+  --navy:       #0c1f3a;
+  --cyan:       #11dbff;
 
   --font-serif: 'Cormorant Garamond', 'Georgia', serif;
   --font-sans:  'DM Sans', 'Helvetica Neue', sans-serif;
@@ -98,7 +100,7 @@ section { padding: 6rem 0; }
 }
 .btn-primary {
   background: var(--sage);
-  color: var(--charcoal);
+  color: var(--white);
   border-color: var(--sage);
 }
 .btn-primary:hover {
@@ -106,7 +108,7 @@ section { padding: 6rem 0; }
   border-color: var(--sage-dark);
   color: var(--white);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(17,219,255,0.35);
+  box-shadow: 0 6px 20px rgba(90,138,74,0.35);
 }
 .btn-outline {
   background: transparent;
@@ -157,9 +159,9 @@ section { padding: 6rem 0; }
 }
 
 /* Logo */
-.nav__logo { flex-shrink: 0; display: flex; align-items: center; }
+.nav__logo { flex-shrink: 0; display: flex; align-items: center; gap: 0.65rem; }
 .nav__logo-img {
-  height: 52px; width: auto; border-radius: 10px; object-fit: contain;
+  height: 44px; width: 44px; border-radius: 50%; object-fit: cover;
   flex-shrink: 0;
 }
 .nav__logo-text {
@@ -202,7 +204,7 @@ section { padding: 6rem 0; }
   position: absolute;
   bottom: 0; left: 0.75rem; right: 0.75rem;
   height: 1.5px;
-  background: var(--sage);
+  background: var(--cyan);
   transform: scaleX(0);
   transition: var(--transition);
   border-radius: 2px;
@@ -558,7 +560,7 @@ section { padding: 6rem 0; }
 /* =============================================
    TESTIMONIALS
    ============================================= */
-.testimonials { background: var(--charcoal); }
+.testimonials { background: var(--navy); }
 .testimonials .eyebrow { color: var(--sage); }
 .testimonials .section-header h2 { color: var(--white); }
 .testimonials-grid {
@@ -618,7 +620,7 @@ section { padding: 6rem 0; }
    CTA BAND
    ============================================= */
 .cta-band {
-  background: linear-gradient(135deg, #0e1a0a 0%, var(--sage-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #0a4a6e 60%, #0c7a8a 100%);
   padding: 5rem 0; text-align: center;
 }
 .cta-band h2 { color: var(--white); margin-bottom: 0.75rem; }
@@ -629,7 +631,7 @@ section { padding: 6rem 0; }
    ============================================= */
 .page-hero {
   padding: 10rem 0 5rem;
-  background: linear-gradient(135deg, #0e1a0a, #1a3010);
+  background: linear-gradient(135deg, var(--navy) 0%, #0e1a0a 40%, #1a3010 100%);
   position: relative; overflow: hidden;
 }
 .page-hero::after {
@@ -806,7 +808,7 @@ section { padding: 6rem 0; }
   transition: border-color 0.2s, box-shadow 0.2s; outline: none;
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-  border-color: var(--sage); box-shadow: 0 0 0 3px rgba(17,219,255,0.2);
+  border-color: var(--sage); box-shadow: 0 0 0 3px rgba(90,138,74,0.12);
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -918,10 +920,27 @@ footer {
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .footer-brand p { font-size: 0.92rem; color: rgba(255,255,255,0.5); margin-top: 1.2rem; line-height: 1.7; }
-.footer-logo { display: flex; align-items: center; margin-bottom: 0.5rem; }
+.footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
 .footer-logo-img {
-  height: 64px; width: auto; border-radius: 10px; object-fit: contain;
+  height: 52px; width: 52px; border-radius: 50%; object-fit: cover;
   flex-shrink: 0;
+}
+.footer-logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo-sub {
+  font-size: 0.6rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
 }
 
 .footer-col h5 {
