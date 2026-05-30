@@ -390,7 +390,7 @@ section { padding: 6rem 0; }
   margin-bottom: 1rem; max-width: 560px;
 }
 .hero-slide__sub {
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.92);
   font-size: 1rem; max-width: 440px;
   margin-bottom: 1.75rem; line-height: 1.7;
   font-weight: 500;

@@ -21,7 +21,7 @@
 
   function startTimer() {
     clearInterval(timer);
-    timer = setInterval(next, 7000);
+    timer = setInterval(next, 8500);
   }
 
   slider.querySelector('.hero-slider__arrow--next')?.addEventListener('click', () => { next(); startTimer(); });
