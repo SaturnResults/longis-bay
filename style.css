@@ -386,13 +386,14 @@ section { padding: 6rem 0; }
 .hero-slide__content h1 {
   color: #fff;
   font-size: clamp(2.4rem, 5.5vw, 4.2rem);
-  font-weight: 300; line-height: 1.05;
+  font-weight: 400; line-height: 1.05;
   margin-bottom: 1rem; max-width: 560px;
 }
 .hero-slide__sub {
   color: rgba(255,255,255,0.72);
   font-size: 1rem; max-width: 440px;
   margin-bottom: 1.75rem; line-height: 1.7;
+  font-weight: 500;
 }
 .btn-slide {
   display: inline-flex; align-items: center; gap: 0.4rem;
