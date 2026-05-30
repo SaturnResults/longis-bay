@@ -422,6 +422,7 @@ section { padding: 6rem 0; }
 .hero-slider__dot.active { background: #fff; transform: scale(1.25); }
 
 @media (max-width: 768px) {
+  .hero-slider { padding: 4.5rem 0.4rem 0.75rem; }
   .hero-slider__arrow { top: auto; bottom: 0.75rem; transform: none; width: 36px; height: 36px; }
   .hero-slider__arrow--prev { left: 1rem; right: auto; }
   .hero-slider__arrow--next { right: 1rem; left: auto; }
