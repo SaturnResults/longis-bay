@@ -667,6 +667,13 @@ section { padding: 6rem 0; }
 .page-hero p { color: rgba(255,255,255,0.65); max-width: 560px; font-size: 1.1rem; }
 .page-hero__actions { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 
+/* Services page hero image */
+.page-hero--services {
+  background:
+    linear-gradient(to bottom, rgba(6,14,4,0.62) 0%, rgba(6,14,4,0.52) 100%),
+    url('../images/services image .jpeg') center center / cover no-repeat;
+}
+
 /* =============================================
    SERVICE DETAIL (services page)
    ============================================= */
