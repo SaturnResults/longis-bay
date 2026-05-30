@@ -677,7 +677,7 @@ section { padding: 6rem 0; }
   .page-hero--services {
     background:
       linear-gradient(to bottom, rgba(6,14,4,0.62) 0%, rgba(6,14,4,0.52) 100%),
-      url('images/services image .jpeg') right center / cover no-repeat;
+      url('images/services image .jpeg') 30% center / cover no-repeat;
   }
 }
 
